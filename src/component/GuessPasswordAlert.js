@@ -79,6 +79,7 @@ export default function GuessPassword() {
          <Snackbar
             open={success}
             autoHideDuration={3000}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
             onClose={handleSuccessSnack}
          >
             <Alert onClose={handleCloseSuccess} severity="success">
@@ -89,6 +90,7 @@ export default function GuessPassword() {
          <Snackbar
             open={wrong}
             autoHideDuration={3000}
+            anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
             onClose={handleWrongSnack}
          >
             <Alert onClose={handleCloseWrong} severity="error">
